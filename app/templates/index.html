@@ -8,24 +8,24 @@
             padding-top: 30px;
         }
         input {
-            max-width: 200px;
+            max-width: 300px;
         }
     </style>
-    <title>Document</title>
+    <title>GitMatch</title>
 </head>
 <body>
     <div class="container">
-        <h1>Adder</h1>
+        <h1>GitMatch</h1>
         <br>
         <form role="form" method="post" onsubmit="return false">
             <div class="form-group">
-                <input type="number" class="form-control" name="number-one" placeholder="Enter a number" required><br>
-                <input type="number" class="form-control" name="number-two" placeholder="Enter a number" required>
+                <input type="text" class="form-control" name="location" placeholder="Enter a location" required><br>
+                <input type="text" class="form-control" name="language" placeholder="Enter a programming language" required>
             </div>
-            <button type="submit" class="btn btn-default">Submit!</button>
+            <button type="submit" class="btn btn-default">Find me a developer!</button>
         </form>
         <br>
-        <p>The value is <span id="results"></span></p>
+        <div id="results"></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src={{ url_for('static', filename="main.js") }}></script>
