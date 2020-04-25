@@ -10,6 +10,9 @@
         input {
             max-width: 300px;
         }
+        .avatar {
+            max-width: 150px;
+        }
     </style>
     <title>GitMatch</title>
 </head>
@@ -22,7 +25,8 @@
                 <input type="text" class="form-control" name="location" placeholder="Enter a location" required><br>
                 <input type="text" class="form-control" name="language" placeholder="Enter a programming language" required>
             </div>
-            <button type="submit" class="btn btn-default">Find me a developer!</button>
+            <button type="submit" class="btn btn-primary">Find me a developer!</button>
+            <button type="submit" class="btn btn-default" id="try-again">Try different location</button>
         </form>
         <br>
         <div id="results"></div>
