@@ -12,9 +12,9 @@ def home():
     if request.method == 'POST':
         # user input
         value_one = request.form.get('first')
-        value_two = request.form.get('second')
+        # value_two = request.form.get('second')
         # api call
-        url = 'https://api.github.com/search/users?q=location:{0}+language:{1}'.format(value_one, value_two)
+        url = 'https://api.github.com/search/users?q=location:{0}'.format(value_one)
         respons_dict = requests.get(url).json()
         # return json
         return jsonify(respons_dict)
